@@ -8,18 +8,22 @@ TempSensor::TempSensor()
 {
     //ctor
     status = SENSOR_ENABLE;
+    min = -45;
+    max = 145;
+    accuracy=2;
 }
 
 TempSensor::~TempSensor()
 {
-    //ctor
+    //dtor
 }
 
 int TempSensor::read()
 {
+
     //Return garbage value since this application doesn't
     //involve actual sensor at this moment.
-    return data;
+    return data%145;
 }
 
 void TempSensor::enabledisable(int argid, int enadis)
@@ -31,7 +35,7 @@ void TempSensor::enabledisable(int argid, int enadis)
 
 void TempSensor::printproperties()
 {
-        cout<<"Minimum Temp:"<<min<<"/n";
-        cout<<"Maximum Temp:"<<max<<"/n";
-        cout<<"Temp sensor accuracy:"<<accuracy<<"/n";
+        cout<<"\nMinimum Temp:"<<min<<"\n";
+        cout<<"Maximum Temp:"<<max<<"\n";
+        cout<<"Temp sensor accuracy:"<<accuracy<<"\n";
 }

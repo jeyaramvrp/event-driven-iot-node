@@ -12,11 +12,10 @@ class TempSensor:public Sensor
         void enabledisable(int id, int enadis);
         void printproperties();
 
-
     private:
         int min;
         int max;
-        int accuracy;  
+        int accuracy;
 };
 
 #endif // IOTTEMPSENSOR_H

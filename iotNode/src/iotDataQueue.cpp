@@ -15,25 +15,28 @@ DataQueue::~DataQueue()
 
 void DataQueue::init()
 {
-    rloc = sloc = 0;
+    rloc = 0;
+    sloc = 0;
 }
 
 //initialise the queue
 void DataQueue::qput(int i)
 {
     if(sloc==IOT_DATAQUEUE_SIZE){
-        cout << "queue is full. \n";
+        cout << "\nqueue is full. \n";
         return;
     }
     sloc++;
+    cout <<"\n sloc "<<sloc<<"\t"<<i;
     q[sloc] = i;
+    cout << "\nWrite is success \n";
 }
 
 //get an integer from the queue
 int DataQueue::qget()
 {
     if(rloc == sloc){
-        cout << "queue underflow. \n";
+        cout << "\nqueue underflow. \n";
         return 0;
     }
     rloc++;

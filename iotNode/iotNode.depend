@@ -33,3 +33,41 @@
 	<iostream>
 	"../include/iotHumiditySensor.h"
 
+1544561649 source:c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\src\iotdataqueue.cpp
+	<iostream>
+	"../include/iotDataQueue.h"
+
+1544393861 c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\include\iotdataqueue.h
+
+1544393861 source:c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\src\iothumiditysensor.cpp
+	<iostream>
+	"../include/iotHumiditySensor.h"
+
+1544393861 c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\include\iothumiditysensor.h
+	"iotSensor.h"
+
+1544393861 c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\include\iotsensor.h
+
+1544737090 source:c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\src\iotstate.cpp
+	<iostream>
+	"../include/iotState.h"
+
+1544736611 c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\include\iotstate.h
+	"iotDataQueue.h"
+	"iotHumiditySensor.h"
+	"iotTempSensor.h"
+
+1544736903 c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\include\iottempsensor.h
+	"iotSensor.h"
+
+1544393861 source:c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\src\iottempsensor.cpp
+	<iostream>
+	"../include/iotTempSensor.h"
+
+1544736867 source:c:\users\klas\desktop\iot masters\software engg\portfolio\event-driven-iot-node\iotnode\main.cpp
+	<iostream>
+	"include/iotDataQueue.h"
+	"include/iotHumiditySensor.h"
+	"include/iotTempSensor.h"
+	"include/iotState.h"
+

@@ -7,18 +7,23 @@ HumiditySensor::HumiditySensor()
 {
     //ctor
     status = SENSOR_ENABLE;
+    responsetime = 1;
+    rhmin = -20;
+    rhmax=120;
+    accuracy=5;
 }
 
 HumiditySensor::~HumiditySensor()
 {
-    //ctor
+    //dtor
+
 }
 
 int HumiditySensor::read()
 {
     //Return garbage value since this application doesn't
     //involve actual sensor at this moment.
-    return data;
+    return data%120;
 }
 
 void HumiditySensor::enabledisable(int argid, int enadis)
@@ -30,8 +35,8 @@ void HumiditySensor::enabledisable(int argid, int enadis)
 
 void HumiditySensor::printproperties()
 {
-        cout<<"Relative Humidity Minimum:"<<rhmin<<"/n";
-        cout<<"Relative Humidity Maximum:"<<rhmax<<"/n";
-        cout<<"Humidity sensor accuracy:"<<accuracy<<"/n";
-        cout<<"Humidity Response Time:"<<responsetime<<"/n";
+        cout<<"\nRelative Humidity Minimum:"<<rhmin<<"\n";
+        cout<<"Relative Humidity Maximum:"<<rhmax<<"\n";
+        cout<<"Humidity sensor accuracy:"<<accuracy<<"\n";
+        cout<<"Humidity Response Time:"<<responsetime<<"\n";
 }

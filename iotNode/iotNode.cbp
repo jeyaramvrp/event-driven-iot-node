@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin\Debug\iotNode" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Debug\" />
+				<Option output="bin/Debug/iotNode" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -16,8 +16,8 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin\Release\iotNode" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj\Release\" />
+				<Option output="bin/Release/iotNode" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -32,7 +32,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/iotDataQueue.h" />
+		<Unit filename="include/iotHumiditySensor.h" />
+		<Unit filename="include/iotSensor.h" />
+		<Unit filename="include/iotState.h" />
+		<Unit filename="include/iotTempSensor.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/iotDataQueue.cpp" />
+		<Unit filename="src/iotHumiditySensor.cpp" />
+		<Unit filename="src/iotState.cpp" />
+		<Unit filename="src/iotTempSensor.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
